@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.35+commit.47b9dedd"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Elliptic Curve Digital Signature Algorithm (ECDSA) operations. These functions can be used to verify that a message was signed by the holder of the private keys of a given address.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/contracts/ECDSAUpgradeable.sol": "ECDSAUpgradeable"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/contracts/ECDSAUpgradeable.sol": {
+			"keccak256": "0x68475668831fd11a4e18c3e517aabeab4110bdfd97aa90166d95e57d7bbc32df",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c9aea0c9431ca4b8e3f12b1e89c2135fc1a5bf80e1c4d733fcdad0e178196674",
+				"dweb:/ipfs/QmVmGqzrwMEfxmAoGuSqaEnrgS3wYDUkJvpTXotjzt5AHb"
+			]
+		},
+		".deps/contracts/MathUpgradeable.sol": {
+			"keccak256": "0x9a316a477b39de4553747d065b5056dfc399acb82417655c6aa2a63a3769f4e5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://348681e576268aab473eb1b93b6d1880bee0883afd7a2600be1f8af4a2efdc6b",
+				"dweb:/ipfs/Qma8mzz6kCi3xHjGuXuJNBxD4FdEJgT9ER9zrjVpM38mTk"
+			]
+		},
+		".deps/contracts/SignedMathUpgradeable.sol": {
+			"keccak256": "0x3aff4377990dea09fbddd20aac048c5146d0be6af5aedc94448d35713918b7a6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cb5519c85bb40953269e73341beebc73e160d02eb0a9e0bf911cbb09361295c",
+				"dweb:/ipfs/QmWVftvhZ2ktwLBL8wLBKGm6dPWhFbraprjj55613but3Y"
+			]
+		},
+		".deps/contracts/StringsUpgradeable.sol": {
+			"keccak256": "0x07ea56c7850ba03fd416c0be499d706bfe1f996a16ee88eb3706a7524ae008eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://47024853736125982189871681a8d0b14a3bf4f3984004118f6810dac2a6f78b",
+				"dweb:/ipfs/QmU7Pivx6djSgQrgqioiGU2G7Pd1W3iZzRLVWEojwfzkSc"
+			]
+		}
+	},
+	"version": 1
+}

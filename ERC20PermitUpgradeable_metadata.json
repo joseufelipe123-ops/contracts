@@ -1,0 +1,692 @@
+{
+	"compiler": {
+		"version": "0.8.35+commit.47b9dedd"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "EIP712DomainChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "DOMAIN_SEPARATOR",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "eip712Domain",
+				"outputs": [
+					{
+						"internalType": "bytes1",
+						"name": "fields",
+						"type": "bytes1"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "version",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "chainId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "verifyingContract",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "salt",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "extensions",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "nonces",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "v",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "r",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "s",
+						"type": "bytes32"
+					}
+				],
+				"name": "permit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:storage-size": "51",
+			"details": "Implementation of the ERC20 Permit extension allowing approvals to be made via signatures, as defined in https://eips.ethereum.org/EIPS/eip-2612[EIP-2612]. Adds the {permit} method, which can be used to change an account's ERC20 allowance (see {IERC20-allowance}) by presenting a message signed by the account. By not relying on `{IERC20-approve}`, the token holder account doesn't need to send a transaction, and thus is not required to hold Ether at all. _Available since v3.4._",
+			"events": {
+				"Approval(address,address,uint256)": {
+					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
+				},
+				"EIP712DomainChanged()": {
+					"details": "MAY be emitted to signal that the domain could have changed."
+				},
+				"Initialized(uint8)": {
+					"details": "Triggered when the contract has been initialized or reinitialized."
+				},
+				"Transfer(address,address,uint256)": {
+					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"DOMAIN_SEPARATOR()": {
+					"details": "Returns the domain separator used in the encoding of the signature for {permit}, as defined by {EIP712}."
+				},
+				"allowance(address,address)": {
+					"details": "See {IERC20-allowance}."
+				},
+				"approve(address,uint256)": {
+					"details": "See {IERC20-approve}. NOTE: If `amount` is the maximum `uint256`, the allowance is not updated on `transferFrom`. This is semantically equivalent to an infinite approval. Requirements: - `spender` cannot be the zero address."
+				},
+				"balanceOf(address)": {
+					"details": "See {IERC20-balanceOf}."
+				},
+				"decimals()": {
+					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the default value returned by this function, unless it's overridden. NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
+				},
+				"decreaseAllowance(address,uint256)": {
+					"details": "Atomically decreases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`."
+				},
+				"eip712Domain()": {
+					"details": "returns the fields and values that describe the domain separator used by this contract for EIP-712 signature."
+				},
+				"increaseAllowance(address,uint256)": {
+					"details": "Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address."
+				},
+				"name()": {
+					"details": "Returns the name of the token."
+				},
+				"nonces(address)": {
+					"details": "Returns the current nonce for `owner`. This value must be included whenever a signature is generated for {permit}. Every successful call to {permit} increases ``owner``'s nonce by one. This prevents a signature from being used multiple times."
+				},
+				"permit(address,address,uint256,uint256,uint8,bytes32,bytes32)": {
+					"details": "Sets `value` as the allowance of `spender` over ``owner``'s tokens, given ``owner``'s signed approval. IMPORTANT: The same issues {IERC20-approve} has related to transaction ordering also apply here. Emits an {Approval} event. Requirements: - `spender` cannot be the zero address. - `deadline` must be a timestamp in the future. - `v`, `r` and `s` must be a valid `secp256k1` signature from `owner` over the EIP712-formatted function arguments. - the signature must use ``owner``'s current nonce (see {nonces}). For more information on the signature format, see the https://eips.ethereum.org/EIPS/eip-2612#specification[relevant EIP section]. CAUTION: See Security Considerations above."
+				},
+				"symbol()": {
+					"details": "Returns the symbol of the token, usually a shorter version of the name."
+				},
+				"totalSupply()": {
+					"details": "See {IERC20-totalSupply}."
+				},
+				"transfer(address,uint256)": {
+					"details": "See {IERC20-transfer}. Requirements: - `to` cannot be the zero address. - the caller must have a balance of at least `amount`."
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}. NOTE: Does not update the allowance if the current allowance is the maximum `uint256`. Requirements: - `from` and `to` cannot be the zero address. - `from` must have a balance of at least `amount`. - the caller must have allowance for ``from``'s tokens of at least `amount`."
+				}
+			},
+			"stateVariables": {
+				"_PERMIT_TYPEHASH_DEPRECATED_SLOT": {
+					"custom:oz-renamed-from": "_PERMIT_TYPEHASH",
+					"details": "In previous versions `_PERMIT_TYPEHASH` was declared as `immutable`. However, to ensure consistency with the upgradeable transpiler, we will continue to reserve a slot."
+				},
+				"__gap": {
+					"details": "This empty reserved space is put in place to allow future versions to add new variables without shifting down storage in the inheritance chain. See https://docs.openzeppelin.com/contracts/4.x/upgradeable#storage_gaps"
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/contracts/ERC20PermitUpgradeable.sol": "ERC20PermitUpgradeable"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/contracts/AddressUpgradeable.sol": {
+			"keccak256": "0xc30f35014c118b6b494d297c4ab876cf4dc5abe91ce6c4b0d53cf8da2ecbd161",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://de467f6b95e7c0b1497863565a9a59ddf9391194445ef8e912ac19b97c95233f",
+				"dweb:/ipfs/QmRRJpb1ndBGWfVMJWGcyqNa9SQPNeqzCp4nDKVBgkvHe4"
+			]
+		},
+		".deps/contracts/Bytes.sol": {
+			"keccak256": "0x5842beaafb06ddb67e9e17ebdbf874a1f783b2380624e8f032128b68d3e56b2d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://62c6f767cdd048d175fd8e143fefa97fed5888b7e0444a2f21d2206f43d0ad31",
+				"dweb:/ipfs/QmbEZNQiLrxBZpP181v3zrP3PBVDB5FeSDYo2v1rpsTGDJ"
+			]
+		},
+		".deps/contracts/ContextUpgradeable.sol": {
+			"keccak256": "0x3d972007090e58c9cbdad73ff3759ca7ab9026cf56808da7f2b31f83e1aade69",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f219d6f5bf83a4063d998720cbe4eec4cf2aa2d3bf26d202892067430d9f7162",
+				"dweb:/ipfs/QmcMVqMqHs3b6XHwpDJt7mVQimBzMAZzn6wzZCdK5WYibn"
+			]
+		},
+		".deps/contracts/CountersUpgradeable.sol": {
+			"keccak256": "0x00be63d3725cc62250022ed0f4fe568789eec9bb9b2172e123251b5aa58d9627",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://967d9004bd8ab1c807b0f7048d36b29e9fdacc40962c76a66843e0010c53ff8d",
+				"dweb:/ipfs/QmaWabFhEiTxFsbwDBZEmSJJgM3UQXgRE3amFrb4GxG8RV"
+			]
+		},
+		".deps/contracts/ECDSAUpgradeable.sol": {
+			"keccak256": "0x68475668831fd11a4e18c3e517aabeab4110bdfd97aa90166d95e57d7bbc32df",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c9aea0c9431ca4b8e3f12b1e89c2135fc1a5bf80e1c4d733fcdad0e178196674",
+				"dweb:/ipfs/QmVmGqzrwMEfxmAoGuSqaEnrgS3wYDUkJvpTXotjzt5AHb"
+			]
+		},
+		".deps/contracts/EIP712Upgradeable.sol": {
+			"keccak256": "0x6cd8fc024cef07334e9f4afc5e55571754f8515220ca4798ef686956fd11dd31",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7efd7290abaa1739031c01686c77bfbe4cf936a4d680c77af130f1bde24d9cd3",
+				"dweb:/ipfs/QmURpkd45qeo1ZEdNPnr8wiEwSsvJzCQasxmnry4f77oop"
+			]
+		},
+		".deps/contracts/ERC20PermitUpgradeable.sol": {
+			"keccak256": "0x5b095b108908cb489eb536a05a03c47fb2b3620a8119e167ea50df4cd7114d4b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://79a0a24dafd9370878a5de0c07fb0331a168a90d261470d6bbf2f0e2b103b0d0",
+				"dweb:/ipfs/QmVgrB2dUBDPsr56KFiv5Emz5TTUDjua8HEYRAW94TYnU8"
+			]
+		},
+		".deps/contracts/ERC20Upgradeable.sol": {
+			"keccak256": "0x70221f577776acbd16ea85f39a6cae44cf3eb00ab8099d41c56af4e028725c3c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0b505c31833303ba6020fb56ef3817d43d7834a83f249b1f244ffc41d0ad2c74",
+				"dweb:/ipfs/Qmb2rZF5H14hJTq4qcz9sgAJhZ3dSisFrsrvWKxr6T4DtA"
+			]
+		},
+		".deps/contracts/IERC20MetadataUpgradeable.sol": {
+			"keccak256": "0xc51beefd2c0cacff942cb378ceffc1e9434b9e337b7a9a65751a649ca15e27aa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://38c0899079c718d2100901965f3caaf8c20a34acbef9d351ffe89b1a20397f88",
+				"dweb:/ipfs/QmbKCTdMA4vHKg8sVqagxJqJtHS8egoGpdZx7Uhxsbasjx"
+			]
+		},
+		".deps/contracts/IERC20PermitUpgradeable.sol": {
+			"keccak256": "0x0bcb6f3a6df938f986a32d10ca828c49dc0148c26906f8a0f996b0f8007589c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a0d82a34b64f4a72e3e40833a895bd599fa82ff562fef723193dcc88042c5300",
+				"dweb:/ipfs/QmUrEx7iCooxe1cSKXq3Zd3MJ3gW6UcNrk2N7DpNtUveMq"
+			]
+		},
+		".deps/contracts/IERC20Upgradeable.sol": {
+			"keccak256": "0x29e2aee3b13169737346068a55fb6dd3dc7485e1f41b45a966571f8742155d54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83fc541f6901664a6e4a6cd7c503c052e7d139f25a751439b91b047f511d9895",
+				"dweb:/ipfs/QmfKZRVGgomPHcNb7S759J4SsBWcvXF2k6wvXSSAYrSYgG"
+			]
+		},
+		".deps/contracts/IERC5267.sol": {
+			"keccak256": "0x82751ed91571077f9c47bec54dd21015f46e7a37ee26be7f4b0f5d95abe6d4da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://867b282bee4b742ec6b21b367782c9488674669d476ab0791cd2336752cbdcbf",
+				"dweb:/ipfs/QmZk2N5Mh8GnZwSMonG8qZLHMCcJ3CFQDYnPj8CvQFRpG7"
+			]
+		},
+		".deps/contracts/Initializable.sol": {
+			"keccak256": "0xabd5c995f25b2b4dfabc733b1842b26025aa29f1c1ac34d7bd9d0de411eb0f36",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7aa6dc3292de415f15456d06b0ef541fcd23f698b590cb7b1e0d7c87e57159e",
+				"dweb:/ipfs/QmYD2zftmZVhLmVUKtNfFBDtg8r5WH2SzS5gTXu8RbHQxx"
+			]
+		},
+		".deps/contracts/MathUpgradeable.sol": {
+			"keccak256": "0x9a316a477b39de4553747d065b5056dfc399acb82417655c6aa2a63a3769f4e5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://348681e576268aab473eb1b93b6d1880bee0883afd7a2600be1f8af4a2efdc6b",
+				"dweb:/ipfs/Qma8mzz6kCi3xHjGuXuJNBxD4FdEJgT9ER9zrjVpM38mTk"
+			]
+		},
+		".deps/contracts/MessageHashUtils.sol": {
+			"keccak256": "0x82e9b4e4ff65cc7cf3c426854b43bc9c57987a4e474d14242d115af6b6a30c50",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e7f8430c2b422aa12353e8dfdeb0c7f8480a6b5d54c2ff9848f2c6b38b72007",
+				"dweb:/ipfs/QmWdQbq9vN5nLcYp6ZavLhESdUucGqRYzWT1ExhrNKUwoY"
+			]
+		},
+		".deps/contracts/SignedMathUpgradeable.sol": {
+			"keccak256": "0x3aff4377990dea09fbddd20aac048c5146d0be6af5aedc94448d35713918b7a6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cb5519c85bb40953269e73341beebc73e160d02eb0a9e0bf911cbb09361295c",
+				"dweb:/ipfs/QmWVftvhZ2ktwLBL8wLBKGm6dPWhFbraprjj55613but3Y"
+			]
+		},
+		".deps/contracts/Strings.sol": {
+			"keccak256": "0xfb62f0a7f049021d880e91c95f4f9494c9bf6216e93650989c6f5de91e683ae7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ff4166c56160ca7f820d6f80dba42f728f8e6079e38d4c79dcd28da9d4666d58",
+				"dweb:/ipfs/QmW5yj3cZ8oWfKJtFrYREy4bGhacvgJQ6BSrEaqCogWLLH"
+			]
+		},
+		".deps/contracts/StringsUpgradeable.sol": {
+			"keccak256": "0x07ea56c7850ba03fd416c0be499d706bfe1f996a16ee88eb3706a7524ae008eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://47024853736125982189871681a8d0b14a3bf4f3984004118f6810dac2a6f78b",
+				"dweb:/ipfs/QmU7Pivx6djSgQrgqioiGU2G7Pd1W3iZzRLVWEojwfzkSc"
+			]
+		},
+		".deps/contracts/math/Math.sol": {
+			"keccak256": "0xeb6a349909f3ba28e8a79161f65d7fdb7e7e5f5613d4b1e4b5ae759440eebf09",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a926386371473dd1219498963fbbd2d82ebbe0bb329e08b29ad8e3b5ef487334",
+				"dweb:/ipfs/QmVzUZMZnnfNk8gMzVwYX9z9pnYjfXs41XDjBr9YNMbuRe"
+			]
+		},
+		".deps/contracts/math/Panic.sol": {
+			"keccak256": "0xae8736539a4bf7b3860e6d461d7d4d675343dc60b5080a4af4935f1840ba1afc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aef7597aa7a089d7ba30877d6db0375c66b559bba2451ddc686d27295b64e156",
+				"dweb:/ipfs/QmX8EohSLGU6q3CLy6BK1zqiADR5o7uuMMBhGkeVwhXAVr"
+			]
+		},
+		".deps/contracts/math/SafeCast.sol": {
+			"keccak256": "0x175a240c192c4395cc334db0aba5245b7c540c95c09e49c5820afdb4ce9b6e32",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://521a2205a44ba55fc796ba492ff7c1991e44d3408e139d795c953aebcd111b94",
+				"dweb:/ipfs/QmQubm2J3y1KRGNHa5cs6ffrLjdYidRLnk1D8yM55AoiP2"
+			]
+		},
+		".deps/contracts/math/SignedMath.sol": {
+			"keccak256": "0x6beca0cbd858c11e9c756b658200c1f65ffd149188d87bca4bcc9aed4863bab4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ba3214f5c87e97aab9cad850988ebd16782984a0a631d1876e6c7950db72a06e",
+				"dweb:/ipfs/QmYqvhtrqg8o9sqFbk1yDcY2HVwmPvyLYYSHvM8nyA3dB6"
+			]
+		}
+	},
+	"version": 1
+}

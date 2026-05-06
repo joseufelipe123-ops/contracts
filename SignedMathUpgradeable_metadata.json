@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.35+commit.47b9dedd"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Standard signed math utilities missing in the Solidity language.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/contracts/SignedMathUpgradeable.sol": "SignedMathUpgradeable"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/contracts/SignedMathUpgradeable.sol": {
+			"keccak256": "0x3aff4377990dea09fbddd20aac048c5146d0be6af5aedc94448d35713918b7a6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8cb5519c85bb40953269e73341beebc73e160d02eb0a9e0bf911cbb09361295c",
+				"dweb:/ipfs/QmWVftvhZ2ktwLBL8wLBKGm6dPWhFbraprjj55613but3Y"
+			]
+		}
+	},
+	"version": 1
+}

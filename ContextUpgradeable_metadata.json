@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.8.35+commit.47b9dedd"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"details": "Provides information about the current execution context, including the sender of the transaction and its data. While these are generally available via msg.sender and msg.data, they should not be accessed in such a direct manner, since when dealing with meta-transactions the account sending and paying for execution may not be the actual sender (as far as an application is concerned). This contract is only required for intermediate, library-like contracts.",
+			"events": {
+				"Initialized(uint8)": {
+					"details": "Triggered when the contract has been initialized or reinitialized."
+				}
+			},
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/contracts/ContextUpgradeable.sol": "ContextUpgradeable"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/contracts/AddressUpgradeable.sol": {
+			"keccak256": "0xc30f35014c118b6b494d297c4ab876cf4dc5abe91ce6c4b0d53cf8da2ecbd161",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://de467f6b95e7c0b1497863565a9a59ddf9391194445ef8e912ac19b97c95233f",
+				"dweb:/ipfs/QmRRJpb1ndBGWfVMJWGcyqNa9SQPNeqzCp4nDKVBgkvHe4"
+			]
+		},
+		".deps/contracts/ContextUpgradeable.sol": {
+			"keccak256": "0x3d972007090e58c9cbdad73ff3759ca7ab9026cf56808da7f2b31f83e1aade69",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f219d6f5bf83a4063d998720cbe4eec4cf2aa2d3bf26d202892067430d9f7162",
+				"dweb:/ipfs/QmcMVqMqHs3b6XHwpDJt7mVQimBzMAZzn6wzZCdK5WYibn"
+			]
+		},
+		".deps/contracts/Initializable.sol": {
+			"keccak256": "0xabd5c995f25b2b4dfabc733b1842b26025aa29f1c1ac34d7bd9d0de411eb0f36",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7aa6dc3292de415f15456d06b0ef541fcd23f698b590cb7b1e0d7c87e57159e",
+				"dweb:/ipfs/QmYD2zftmZVhLmVUKtNfFBDtg8r5WH2SzS5gTXu8RbHQxx"
+			]
+		}
+	},
+	"version": 1
+}

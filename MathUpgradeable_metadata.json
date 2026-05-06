@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.35+commit.47b9dedd"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Standard math utilities missing in the Solidity language.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/contracts/MathUpgradeable.sol": "MathUpgradeable"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/contracts/MathUpgradeable.sol": {
+			"keccak256": "0x9a316a477b39de4553747d065b5056dfc399acb82417655c6aa2a63a3769f4e5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://348681e576268aab473eb1b93b6d1880bee0883afd7a2600be1f8af4a2efdc6b",
+				"dweb:/ipfs/Qma8mzz6kCi3xHjGuXuJNBxD4FdEJgT9ER9zrjVpM38mTk"
+			]
+		}
+	},
+	"version": 1
+}

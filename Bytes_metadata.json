@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.35+commit.47b9dedd"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Bytes operations.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/contracts/Bytes.sol": "Bytes"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/contracts/Bytes.sol": {
+			"keccak256": "0x5842beaafb06ddb67e9e17ebdbf874a1f783b2380624e8f032128b68d3e56b2d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://62c6f767cdd048d175fd8e143fefa97fed5888b7e0444a2f21d2206f43d0ad31",
+				"dweb:/ipfs/QmbEZNQiLrxBZpP181v3zrP3PBVDB5FeSDYo2v1rpsTGDJ"
+			]
+		},
+		".deps/contracts/math/Math.sol": {
+			"keccak256": "0xeb6a349909f3ba28e8a79161f65d7fdb7e7e5f5613d4b1e4b5ae759440eebf09",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a926386371473dd1219498963fbbd2d82ebbe0bb329e08b29ad8e3b5ef487334",
+				"dweb:/ipfs/QmVzUZMZnnfNk8gMzVwYX9z9pnYjfXs41XDjBr9YNMbuRe"
+			]
+		},
+		".deps/contracts/math/Panic.sol": {
+			"keccak256": "0xae8736539a4bf7b3860e6d461d7d4d675343dc60b5080a4af4935f1840ba1afc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aef7597aa7a089d7ba30877d6db0375c66b559bba2451ddc686d27295b64e156",
+				"dweb:/ipfs/QmX8EohSLGU6q3CLy6BK1zqiADR5o7uuMMBhGkeVwhXAVr"
+			]
+		},
+		".deps/contracts/math/SafeCast.sol": {
+			"keccak256": "0x175a240c192c4395cc334db0aba5245b7c540c95c09e49c5820afdb4ce9b6e32",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://521a2205a44ba55fc796ba492ff7c1991e44d3408e139d795c953aebcd111b94",
+				"dweb:/ipfs/QmQubm2J3y1KRGNHa5cs6ffrLjdYidRLnk1D8yM55AoiP2"
+			]
+		}
+	},
+	"version": 1
+}

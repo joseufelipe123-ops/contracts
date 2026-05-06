@@ -1,0 +1,185 @@
+{
+	"compiler": {
+		"version": "0.8.35+commit.47b9dedd"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "OwnableInvalidOwner",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "OwnableUnauthorizedAccount",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "version",
+						"type": "uint8"
+					}
+				],
+				"name": "Initialized",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract module which provides a basic access control mechanism, where there is an account (an owner) that can be granted exclusive access to specific functions. The initial owner is set to the address provided by the deployer. This can later be changed with {transferOwnership}. This module is used through inheritance. It will make available the modifier `onlyOwner`, which can be applied to your functions to restrict their use to the owner.",
+			"errors": {
+				"OwnableInvalidOwner(address)": [
+					{
+						"details": "The owner is not a valid owner account. (eg. `address(0)`)"
+					}
+				],
+				"OwnableUnauthorizedAccount(address)": [
+					{
+						"details": "The caller account is not authorized to perform an operation."
+					}
+				]
+			},
+			"events": {
+				"Initialized(uint8)": {
+					"details": "Triggered when the contract has been initialized or reinitialized."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/contracts/OwnableUpgradeable.sol": "OwnableUpgradeable"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/contracts/AddressUpgradeable.sol": {
+			"keccak256": "0xc30f35014c118b6b494d297c4ab876cf4dc5abe91ce6c4b0d53cf8da2ecbd161",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://de467f6b95e7c0b1497863565a9a59ddf9391194445ef8e912ac19b97c95233f",
+				"dweb:/ipfs/QmRRJpb1ndBGWfVMJWGcyqNa9SQPNeqzCp4nDKVBgkvHe4"
+			]
+		},
+		".deps/contracts/ContextUpgradeable.sol": {
+			"keccak256": "0x3d972007090e58c9cbdad73ff3759ca7ab9026cf56808da7f2b31f83e1aade69",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f219d6f5bf83a4063d998720cbe4eec4cf2aa2d3bf26d202892067430d9f7162",
+				"dweb:/ipfs/QmcMVqMqHs3b6XHwpDJt7mVQimBzMAZzn6wzZCdK5WYibn"
+			]
+		},
+		".deps/contracts/Initializable.sol": {
+			"keccak256": "0xabd5c995f25b2b4dfabc733b1842b26025aa29f1c1ac34d7bd9d0de411eb0f36",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b7aa6dc3292de415f15456d06b0ef541fcd23f698b590cb7b1e0d7c87e57159e",
+				"dweb:/ipfs/QmYD2zftmZVhLmVUKtNfFBDtg8r5WH2SzS5gTXu8RbHQxx"
+			]
+		},
+		".deps/contracts/OwnableUpgradeable.sol": {
+			"keccak256": "0x38c0d33b85ff43538210e9a9f9dd6856c35af63a540c314d0915799a6ee19c65",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a96630e68957a1904e7922efd4adcf70670fa706ad28743d875862e3b8220f32",
+				"dweb:/ipfs/QmNjGnrmK2btAU3oxTyEZyDweDrQXTreDrod9kmzd67Pmr"
+			]
+		}
+	},
+	"version": 1
+}
